@@ -29,7 +29,7 @@ export default function Register(props) {
         console.log(user);
         const log = async () => {
             try {
-                const res = await axios.post('http://localhost:5500/cussignup', { shopkeeperId, firstName, lastName, email, number })
+                const res = await axios.post('https://apnidukan-vn2v.onrender.com/cussignup', { shopkeeperId, firstName, lastName, email, number })
                 if (res) {
                     console.log("Connected")
                     alert(res.data.message)

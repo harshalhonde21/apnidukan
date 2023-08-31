@@ -6,7 +6,7 @@ const ReceiptShow = () => {
   const [matchingReceipt, setMatchingReceipt] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:5500/api/receipt')
+    fetch('https://apnidukan-vn2v.onrender.com/api/receipt')
       .then(response => response.json())
       .then(data => {
         setReceiptData(data);
@@ -21,7 +21,7 @@ const ReceiptShow = () => {
   }
 
   const handleDelete = (id) => {
-    fetch(`http://localhost:5500/api/receipt/${id}`, {
+    fetch(`https://apnidukan-vn2v.onrender.com/api/receipt/${id}`, {
       method: 'DELETE',
     })
       .then(response => {

@@ -32,7 +32,7 @@ export default function Sales() {
   useEffect(() => {
     const fetchCustomers = async () => {
       try {
-        const res = await axios.get("http://localhost:5500/getcus");
+        const res = await axios.get("https://apnidukan-vn2v.onrender.com/getcus");
         setCustomers(res.data.customer);
       } catch (err) {
         console.log("Error fetching customers:", err);
@@ -63,7 +63,7 @@ export default function Sales() {
 
     try {
       const res = await axios.get(
-        `http://localhost:5500/getcus/${selectedCustomerId}`
+        `https://apnidukan-vn2v.onrender.com/getcus/${selectedCustomerId}`
       );
       setPhoneNumber(res.data.customer.number);
     } catch (err) {
@@ -104,7 +104,7 @@ export default function Sales() {
     console.log(billData);
     try {
       const response = await axios.post(
-        "http://localhost:5500/api/bills/createBill",
+        "https://apnidukan-vn2v.onrender.com/api/bills/createBill",
         billData
       );
       alert(response.data.message);

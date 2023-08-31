@@ -47,7 +47,7 @@ export default function Receipt() {
     };
 
     // Replace 'YOUR_BACKEND_API_URL' with the actual URL of your backend API endpoint
-    const backendURL = 'http://localhost:5500/api/receipt';
+    const backendURL = 'https://apnidukan-vn2v.onrender.com/api/receipt';
 
     // Send the form data to the backend using Axios POST request
     axios.post(backendURL, formData)

@@ -28,7 +28,7 @@ export default function ShopReg() {
         let password = user.pass
         let address = user.add
         e.preventDefault()
-        axios.post("http://localhost:5500/signup", { firstName,lastName,userName,password,email,address})
+        axios.post("https://apnidukan-vn2v.onrender.com/signup", { firstName,lastName,userName,password,email,address})
             .then(res => console.log(res))
             .then(res => alert("Registration is done successfully now u can proceed further to login",res))
             .catch(err => console.log("kuch gadbad hai"+err))

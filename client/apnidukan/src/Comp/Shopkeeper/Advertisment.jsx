@@ -51,7 +51,7 @@ export default function Advertisment() {
     // Load data from backend on component mount
     useEffect(() => {
         // Fetch carousel items from backend
-        axios.get("http://localhost:5500/api/carousel")
+        axios.get("https://apnidukan-vn2v.onrender.com/api/carousel")
             .then((response) => {
                 setCarouselItems(response.data);
                 setTableData(response.data);
@@ -70,7 +70,7 @@ export default function Advertisment() {
         };
 
         // Send new carousel item to backend
-        axios.post("http://localhost:5500/api/carousel", newCarouselItem)
+        axios.post("https://apnidukan-vn2v.onrender.com/api/carousel", newCarouselItem)
             .then((response) => {
                 setCarouselItems([...carouselItems, response.data]);
                 setTableData([...tableData, response.data]);
@@ -85,7 +85,7 @@ export default function Advertisment() {
 
     const handleDelete = (id) => {
         // Send delete request to backend
-        axios.delete(`http://localhost:5500/api/carousel/${id}`)
+        axios.delete(`https://apnidukan-vn2v.onrender.com/api/carousel/${id}`)
             .then(() => {
                 setCarouselItems(carouselItems.filter((item) => item._id !== id));
                 setTableData(tableData.filter((item) => item._id !== id));
