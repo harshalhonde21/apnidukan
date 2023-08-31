@@ -1,0 +1,55 @@
+// import React from "react";
+import "./index1.css";
+export default function Receipt() {
+  return (
+    <>
+      <div className="receipt">
+        <h3 style={{ fontSize: "1.52rem", marginBottom: "2rem" }}>
+          Receipt Generator
+        </h3>
+        <form className="login-form">
+          <label htmlFor="productCustomer phonenumber">
+            Customer phonenumber:{" "}
+          </label>
+          <input
+            type="text"
+            name="productCustomer phone number"
+            id="productCustomer Namet"
+            placeholder="Enter Customer phone number"
+            required
+          />
+          <label htmlFor="Current Balance Amt">Current Balance Amt: </label>
+          <input
+            type="text"
+            name="Current Balance Amt"
+            id="Current Balance Amt"
+            placeholder="Enter Current Balance Amt"
+            required
+          />
+          <label htmlFor="Paying Amount">Paying Amount: </label>
+          <input
+            type="text"
+            name="mrp"
+            id="Paying Amount"
+            placeholder="Enter Paying Amt"
+            required
+          />
+          <label htmlFor="Remaining Amount">Remaining Amount: </label>
+          <input
+            type="text"
+            name="costRemaining Amount"
+            id="costRemaining Amount"
+            placeholder="Enter Remaining Amt"
+            required
+          />
+          <button type="submit" className="cbtn">
+            Submet
+          </button>
+          <button type="reset" className="rbtn">
+            Cancel
+          </button>
+        </form>
+      </div>
+    </>
+  );
+}

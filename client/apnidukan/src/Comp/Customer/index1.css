@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background: url(./img/11065.jpg);
+    background-size: 60%;
+    background-position: top;
+    width: 100vw;
+    background-repeat: no-repeat;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+  .auth-form-container {
+    border: 1px solid black;
+  }
+  
+  .auth-form-container,
+  .login-form,
+  .register-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media screen and (min-width: 600px) {
+    .auth-form-container {
+      padding: 5rem;
+      /* width: 50%; */
+      border: 1px solid black;
+      border-radius: 10px;
+      text-align: center;
+      background-color: rgba(240, 248, 255, 0.467);
+      margin: 3.5rem;
+    }
+  }
+  
+  label {
+    text-align: left; 
+    padding: 0.25rem 0;
+  }
+  
+  input {
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  button {
+    border: none;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #7439db;
+    margin: 1rem;
+  }
+  
+  .link-btn {
+    background: none;
+    color: black;
+    text-decoration: underline;
+  }
+  .nav ul{
+    /* background-color: black;  */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0rem;
+  }
+  
+  .nav ul li a{
+    margin: 0 2rem;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    color: black;
+    background-color: rgba(249, 249, 249, 0.752);
+    border-radius: 1rem;
+    /* box-shadow: 1px 1px 5px black; */
+    border: 1px solid black;
+  }
+  .nav a:hover {
+    background-color: #fcecdc;
+  }
+  .nav ul .active {
+    background-color:#fcecdc;
+  }
+  .auth-form-container h2{
+    margin-bottom: 1rem;
+  }
